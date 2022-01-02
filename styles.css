@@ -1,0 +1,70 @@
+html {
+    background-color: rgba(210, 180, 140, 0.671);
+
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-right: 1rem;
+    color: white;
+}
+
+.display {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    border: 2px solid white;
+    height: 1000px;
+    width: 100%;
+    gap: 10px;
+}
+
+.picture {
+    background-color: beige;
+    color: black;
+    height: 100%;
+}
+
+.kevin {
+    background-image: url("media/3F8A4D90-AEAD-4D61-80E8-4CD895360FCE.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1/2/1/2
+}
+
+.burning {
+    grid-area: 1/1/1/1;
+    background-image: url("media/IMG_1204.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.something {
+    background-image: url("media/04A306FB-9DEF-40F4-BA42-70F620353F3C.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1/3/1/3;
+}
+
+
+.testimonials {
+    display: grid;
+    
+}
