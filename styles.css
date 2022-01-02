@@ -1,14 +1,15 @@
 html {
-    background-color: rgba(210, 180, 140, 0.671);
-
+    background-color: white;
+    color: black;
 }
 
 .container {
     background-color: rgb(0, 0, 0);
-    height: 50px;
+    height: 4rem;
     display: flex;
     color: white;
     justify-content: space-between;
+    margin-bottom: .5rem;
 }
 
 .name {
@@ -29,42 +30,107 @@ ul {
 
 .display {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    border: 2px solid white;
-    height: 1000px;
-    width: 100%;
-    gap: 10px;
+    grid-template: repeat(8, 1fr) / 1fr 1fr;
+    height: 500px;
+    max-width: 100%;
+    gap: 1rem;
 }
 
-.picture {
-    background-color: beige;
-    color: black;
-    height: 100%;
-}
+
 
 .kevin {
     background-image: url("media/3F8A4D90-AEAD-4D61-80E8-4CD895360FCE.jpg");
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    grid-area: 1/2/1/2
+    grid-area: 1/2/9/2;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .burning {
+    display: grid;
     grid-area: 1/1/1/1;
-    background-image: url("media/IMG_1204.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    justify-content: end;
 }
 
-.something {
-    background-image: url("media/04A306FB-9DEF-40F4-BA42-70F620353F3C.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: 1/3/1/3;
-}
+
 
 
 .testimonials {
     display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    height: 1000px;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.thisone {
+    grid-area: 1/1/1/1;
+    background-image: url("media/04A306FB-9DEF-40F4-BA42-70F620353F3C.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.flame {
+    grid-area: 2/2/2/2;
+    background-image: url("media/IMG_1204.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.one {
+    grid-area: 1/2/1/2;
+    border-style: solid;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(206, 206, 206, 0.527);
+    font-family: 'Licorice', cursive;
+    border-radius: 10px;
+}
+
+.two {
+    grid-area: 2/1/2/1;
+    border-style: solid;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(206, 206, 206, 0.527);
+    font-family: 'Licorice', cursive;
+    border-radius: 10px;
+}
+
+.three {
+ 
+}
+
+p {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.special {
+    color: black;
+    display: block;
+    line-height: 10rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+}
+
+
+button {
+    background-color: rgba(48, 114, 48, 0.219);
+    width: 250px;
+    height: 100px;
+    font-size: 1.5rem;
+    border-radius: 10px;
     
 }
